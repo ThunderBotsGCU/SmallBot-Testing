@@ -14,6 +14,7 @@ using namespace vex;
 // Brain should be defined by default
 brain Brain;
 
+vex::competition Competition;
 
 // START V5 MACROS
 #define waitUntil(condition)                                                   \
@@ -203,11 +204,11 @@ void usercontrol() {
 int main() {
   // Initializing Robot Configuration. DO NOT REMOVE!
   vexcodeInit();
-  
+
   // Set up callbacks for autonomous and driver control periods
   Competition.autonomous(autonomous);
   Competition.drivercontrol(usercontrol);
-  
+
   // Prevent main from exiting with an infinite loop
   while (true) {
     wait(100, msec);
