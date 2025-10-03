@@ -14,7 +14,7 @@ using namespace vex;
 // Brain should be defined by default
 brain Brain;
 
-vex::competition Competition; //Define Competition
+vex::competition Competition; // Define Competition
 
 // START V5 MACROS
 #define waitUntil(condition)                                                   \
